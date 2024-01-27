@@ -1,0 +1,27 @@
+# # Create a new task
+# POST http://localhost:3000/api/users/3/tasks
+# Authorization: Bearer 6c3f0bdb-5b1f-46f8-a66c-f9c2285e1dae
+# Content-Type: application/json
+
+# {
+#     "title": "New Task",
+#     "description": "Task description"
+# }
+
+# # Get a task
+# GET http://localhost:3000/api/users/3/tasks/2
+# Authorization: Bearer 6c3f0bdb-5b1f-46f8-a66c-f9c2285e1dae
+
+# # Update a task
+# PUT http://localhost:3000/api/users/3/tasks/2
+# Authorization: Bearer 6c3f0bdb-5b1f-46f8-a66c-f9c2285e1dae
+# Content-Type: application/json
+
+# {
+#     "title": "Updated Task",
+#     "description": "Updated task description"
+# }
+
+# # Search tasks
+GET http://localhost:3000/api/users/3/tasks
+Authorization: Bearer 6c3f0bdb-5b1f-46f8-a66c-f9c2285e1dae

@@ -1,0 +1,25 @@
+# Login user and get authentication token
+# POST http://localhost:3000/api/users/login
+# Content-Type: application/json
+
+# {
+#     "username": "testuser4",
+#     "password": "password"
+# }
+
+# # Get current user information
+# GET http://localhost:3000/api/users/current
+# Authorization: Bearer 6c3f0bdb-5b1f-46f8-a66c-f9c2285e1dae
+
+# # Update current user information
+PATCH http://localhost:3000/api/users/current
+Authorization: Bearer 6c3f0bdb-5b1f-46f8-a66c-f9c2285e1dae
+Content-Type: application/json
+
+{
+    "name": "name"
+}
+
+# # Logout current user
+# DELETE http://localhost:3000/api/users/logout
+# Authorization: Bearer a52bc3b6-001c-42c9-9e0e-95e4be6e1bd6
